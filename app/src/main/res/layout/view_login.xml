@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/element_margin"
+    android:paddingLeft="@dimen/element_margin"
+    android:paddingRight="@dimen/element_margin"
+    android:paddingTop="@dimen/element_margin"
+    tools:context=".login.LoginFragment"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/imv_logo"
+        android:foregroundGravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_sense_health_logo_circle"
+        android:layout_marginBottom="@dimen/element_margin"/>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:drawableLeft="@android:drawable/ic_menu_sort_alphabetically"
+        android:drawablePadding="@dimen/element_half_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/element_height"
+        android:layout_marginBottom="@dimen/element_margin"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/edt_pin"
+        android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+        android:drawablePadding="@dimen/element_half_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/element_height"
+        android:layout_marginBottom="@dimen/element_margin"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:background="@drawable/rounded_button"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:elevation="@dimen/element_half_margin"
+        android:layout_height="@dimen/element_height"
+        android:text="Login"/>
+
+</LinearLayout>
